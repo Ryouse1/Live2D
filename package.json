@@ -1,0 +1,11 @@
+{
+  "name": "live2d-mvp",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix server run build && npm --prefix frontend run build",
+    "dev": "npm --prefix server run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "deploy": "npm run build && (npm --prefix server run start & npm --prefix frontend run start & wait)",
+    "test": "npm --prefix server run test"
+  }
+}
