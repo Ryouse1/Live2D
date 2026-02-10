@@ -1,6 +1,10 @@
 {
   "name": "live2d-mvp",
   "private": true,
+  "workspaces": [
+    "server",
+    "frontend"
+  ],
   "scripts": {
     "build": "npm --prefix server run build && npm --prefix frontend run build",
     "dev": "npm --prefix server run dev",
